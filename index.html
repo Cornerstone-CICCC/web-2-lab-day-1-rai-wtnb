@@ -1,14 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>City/Weather Search</title>
-  <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-  <!-- YOUR CODE HERE -->
-  
-  <script src="./app.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab day 1</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <div class="search-container">
+      <div class="search-box">
+        <input type="text" id="city-input" placeholder="Enter city name..." />
+        <button id="search-btn">Search</button>
+      </div>
+    </div>
+
+    <div id="weather-container" class="weather-info hidden">
+      <div class="banner">
+        <h1 id="city-name"></h1>
+        <h2 id="temperature"></h2>
+      </div>
+
+      <div class="details-container">
+        <table class="details-table">
+          <tr>
+            <th>Country</th>
+            <td id="country"></td>
+          </tr>
+          <tr>
+            <th>Timezone</th>
+            <td id="timezone"></td>
+          </tr>
+          <tr>
+            <th>Population</th>
+            <td id="population"></td>
+          </tr>
+          <tr>
+            <th>Tomorrow's Forecast</th>
+            <td id="forecast"></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <p id="error-message" class="error hidden"></p>
+
+    <script src="./app.js"></script>
+  </body>
 </html>
